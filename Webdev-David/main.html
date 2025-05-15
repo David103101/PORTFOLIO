@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./Resources/CSS/main.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="./Resources/image/logo.png" type="image/x-icon" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./Resources/image/logo.png" alt="Amante logo">
+      <a href="#profile"><span class="span_1">A.</span><span class="span_2">David</span></a>
+    </div>
+    <ul>
+      <li class="active_nav"><a href="#profile">Profile</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#trainings">Trainings</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Job Experience</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="profile" class="profile_section">
+      <div class="profile_card">
+        <div class="profile_image">
+          <img src="./Resources/image/483741369_2093049951118183_8425058381833455551_n.jpg" alt="David Amante Profile Picture">
+        </div>
+        <div class="profile_info">
+          <h1>DAVID AMANTE</h1>
+          <h2>A Computer Engineering Student</h2>
+          <p>
+            Passionate and driven Computer Engineering student skilled in front-end development and UI/UX design.<br>
+            Always eager to learn and contribute to innovative projects.
+          </p>
+          <div class="social_links">
+            <a href="#" class="btn">Download Resume</a>
+            <div class="social_media_links">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook-circle'></i></a>
+              <a href="https://www.tiktok.com/en/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-tiktok'></i></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a>
+              <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-telegram'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2><i class='bx bx-book-open'></i> Education</h2>
+      <p>Bachelor of Science in Computer Engineering, XYZ University</p>
+    </section>
+
+    <section class="trainings">
+      <h2><i class='bx bx-certification'></i> Trainings</h2>
+      <ul>
+        <li>Full-Stack Web Development - XYZ Bootcamp</li>
+        <li>UI/UX Design Basics - Online Course</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2><i class='bx bx-code-alt'></i> Projects</h2>
+      <div class="project" onclick="openModal()">
+        <h3>Interactive Portfolio</h3>
+        <p>Click to learn more.</p>
+      </div>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>This project showcases a single-page application built using HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2><i class='bx bx-briefcase'></i> Job Experience</h2>
+      <div class="slider">
+        <img src="https://via.placeholder.com/300x200?text=Job+1" alt="Screenshot from Job Experience 1">
+        <img src="https://via.placeholder.com/300x200?text=Job+2" alt="Screenshot from Job Experience 2">
+        <img src="https://via.placeholder.com/300x200?text=Job+3" alt="Screenshot from Job Experience 3">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><i class='bx bx-envelope'></i> Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p class="error" id="error"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
